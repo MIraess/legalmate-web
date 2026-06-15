@@ -83,7 +83,7 @@ export default function ChatPage() {
 
   return (
     <main
-      className="min-h-screen p-8 text-white"
+      className="min-h-screen p-4 md:p-8 text-white"
       style={{
         backgroundColor: "#121214",
       }}
@@ -98,9 +98,9 @@ export default function ChatPage() {
         ⚖️ LegalMate
       </h1>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div
-          className="rounded-xl p-6 mb-6 min-h-[400px] overflow-y-auto"
+          className="rounded-xl p-4 md:p-6 mb-6 min-h-[500px] overflow-y-auto"
           style={{
             backgroundColor: "#1A1A1D",
             
@@ -122,7 +122,7 @@ export default function ChatPage() {
               }`}
             >
               <div
-                className="inline-block p-4 rounded-xl max-w-[80%]"
+                className="inline-block p-5 rounded-x1 max-w-[95%] md:max-w-[75%] leading-relaxed"
                 style={{
                   backgroundColor:
                     msg.role === "user"
@@ -133,6 +133,7 @@ export default function ChatPage() {
                     msg.role === "user"
                       ? "#121214"
                       : "white",
+                  wordBreak: "break-word",
                 }}
               >
                 <ReactMarkdown>
