@@ -1,65 +1,113 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main
+      className="min-h-screen text-white relative overflow-hidden"
+      style={{
+        background:
+          "radial-gradient(circle at right center, rgba(181,148,16,0.35), transparent 40%), #121214",
+      }}
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/law1.jpg')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center 15%",
+          backgroundSize: "cover",
+          opacity: 0.70,
+        }}
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-20 py-6 md:py-10">
+
+        {/* Navbar */}
+        <nav className="flex flex-col md:flex-row justify-between items-center gap-4">
+
+          <h1
+            className="font-bold tracking-wide"
+            style={{
+              color: "#B59410",
+              fontSize: "25px",
+            }}
+          >
+            ⚖️ LegalMate
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg">
+
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="/how-it-works"
+              className="hover:text-yellow-500 transition"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              How It Works
+            </a>
+
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="/constitution"
+              className="hover:text-yellow-500 transition"
             >
-              Learning
-            </a>{" "}
-            center.
+              Constitution
+            </a>
+
+            <a
+              href="/quiz"
+              className="hover:text-yellow-500 transition"
+            >
+              Quiz Generator
+            </a>
+
+            <a
+              href="/about"
+              className="hover:text-yellow-500 transition"
+            >
+              About
+            </a>
+
+          </div>
+
+        </nav>
+
+        {/* Hero Section */}
+        <section className="mt-7 md:mt-11 max-w-4xl">
+
+          <h2
+            className="font-bold leading-tight"
+            style={{
+              fontSize: "clamp(2.5rem, 8vw, 4.5rem)",
+              lineHeight: "1.1",
+            }}
+          >
+            AI Legal Intelligence
+            <br />
+            for Nigerian Law Students
+          </h2>
+
+          <p className="text-gray-300 text-base md:text-xl mt-6 max-w-xl leading-relaxed">
+            Learn faster, understand legal concepts,
+            explore constitutional provisions,
+            and prepare for exams with AI-powered
+            assistance.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/chat"
+            className="inline-block mt-8 px-8 py-4 rounded-xl font-semibold text-lg transition hover:scale-105"
+            style={{
+              backgroundColor: "#B59410",
+              color: "#ffffff",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Try Assistant
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        </section>
+
+      </div>
+    </main>
   );
 }
