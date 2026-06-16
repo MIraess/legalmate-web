@@ -22,7 +22,7 @@ export default function ConstitutionPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            message: `Explain Section ${query} of the Nigerian Constitution`,
+            message: `Section ${query}`,
             sessionId: "constitution-user",
           }),
         }

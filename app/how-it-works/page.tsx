@@ -35,7 +35,7 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
 
             <img
-              src="/images/law1.jpg"
+              src="/images/law4.jpg"
               alt="AI Legal Assistant"
               className="rounded-2xl border"
               style={{
