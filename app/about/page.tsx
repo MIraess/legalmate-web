@@ -24,7 +24,7 @@ export default function AboutPage() {
 
         <p className="text-xl text-gray-300 leading-relaxed mb-6">
           LegalMate is an AI-powered legal learning assistant
-          designed specifically for Nigerian law students.
+          designed specifically for Nigerian law students and ordinary persons.
         </p>
 
         <p className="text-lg text-gray-400 leading-relaxed mb-6">
@@ -35,8 +35,8 @@ export default function AboutPage() {
 
         <p className="text-lg text-gray-400 leading-relaxed mb-6">
           Beyond legal explanations, LegalMate also provides
-          constitution search capabilities and generates quizzes
-          to support learning and revision.
+          constitution search capabilities and generates quizzes on any law topic
+          to support learning and revision. It also supports voice notes on the current WhatsApp version as well as providing answers in the most common Nigerian Langusges.
         </p>
 
         <div
