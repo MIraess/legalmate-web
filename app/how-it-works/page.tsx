@@ -35,7 +35,7 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
 
             <img
-              src="/images/law4.jpg"
+              src="/images/law4.png"
               alt="AI Legal Assistant"
               className="rounded-2xl border"
               style={{
@@ -95,7 +95,7 @@ export default function FeaturesPage() {
             </div>
 
             <img
-              src="/images/law2.png"
+              src="/images/law5.png"
               alt="Constitution Search"
               className="rounded-2xl border"
               style={{
@@ -113,7 +113,7 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
 
             <img
-              src="/images/law3.png"
+              src="/images/law6.png"
               alt="Quiz Generator"
               className="rounded-2xl border"
               style={{
