@@ -22,13 +22,15 @@ export default function ConstitutionPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            message: `Section ${query}`,
+            message: `${query}`,
             sessionId: "constitution-user",
           }),
         }
       );
 
       const data = await response.json();
+
+      console.log(data);
 
       setResult(data.reply);
       setLoading(false);
