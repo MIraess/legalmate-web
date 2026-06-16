@@ -44,7 +44,7 @@ export default function Home() {
               href="/how-it-works"
               className="hover:text-yellow-500 transition"
             >
-              How It Works
+              Features
             </a>
 
             <a
